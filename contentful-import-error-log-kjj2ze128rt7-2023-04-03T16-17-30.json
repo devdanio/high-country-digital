@@ -1,0 +1,74 @@
+[
+  {
+    "ts": "2023-04-03T20:19:04.518Z",
+    "level": "error",
+    "error": {
+      "name": "Conflict",
+      "entity": {
+        "name": "Gatsby Builds",
+        "url": "https://webhook.gatsbyjs.com/hooks/data_source/publish/1492cbbf-0023-4587-a443-f0ceafebda67",
+        "httpBasicUsername": null,
+        "topics": [
+          "ContentType.publish",
+          "Entry.publish",
+          "Asset.publish"
+        ],
+        "filters": null,
+        "transformation": null,
+        "active": true,
+        "sys": {
+          "type": "WebhookDefinition",
+          "id": "gatsby-builds",
+          "version": 0,
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "jou8fvkfe5pw"
+            }
+          },
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "1ZkS53idWXmyWeA3nvkU95"
+            }
+          },
+          "createdAt": "2020-03-12T09:05:48Z",
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "1ZkS53idWXmyWeA3nvkU95"
+            }
+          },
+          "updatedAt": "2020-03-12T09:05:48Z"
+        },
+        "headers": [
+        ]
+      },
+      "data": {
+        "status": 409,
+        "statusText": "Conflict",
+        "message": "Please pass sys.version as HTTP header \"X-Contentful-Version\".",
+        "details": {
+        },
+        "request": {
+          "url": "/spaces/kjj2ze128rt7/webhook_definitions/gatsby-builds",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.cli/0.0.0-determined-by-semantic-release; feature space-import; sdk contentful-management.js/0.0.0-determined-by-semantic-release; platform node.js/v16.19.0; os macOS/v16.19.0;",
+            "CF-Sequence": "4c4792f5-45cb-4f4f-9e4c-4595f5dae3bd",
+            "Authorization": "Bearer ...XpAdk",
+            "User-Agent": "axios/0.27.2",
+            "Content-Length": 278
+          },
+          "method": "put",
+          "payloadData": "{\"name\":\"Gatsby Builds\",\"url\":\"https://webhook.gatsbyjs.com/hooks/data_source/publish/1492cbbf-0023-4587-a443-f0ceafebda67\",\"httpBasicUsername\":null,\"topics\":[\"ContentType.publish\",\"Entry.publish\",\"Asset.publish\"],\"filters\":null,\"transformation\":null,\"active\":true,\"headers\":[]}"
+        },
+        "requestId": "a824bc2b-3289-40e6-a3a5-623b890f1c40"
+      }
+    }
+  }
+]
