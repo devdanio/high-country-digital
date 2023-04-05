@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react"
 import { Link } from "gatsby"
 import MenuContext from "../MenuContext"
+import { StaticImage } from "gatsby-plugin-image"
 import { motion } from "framer-motion"
 import { menuItems } from "./NavConstants"
 import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
@@ -66,8 +67,16 @@ const NavModule = () => {
           {title && (
             <LogoStyles>
               <Link to="/">
-                {title}
-                <span>.</span>
+                <StaticImage
+                  src="../../../static/logos/high-country-digital-logo-white.svg"
+                  alt="High Country Digital Logo"
+                  layout="constrained"
+                  placeholder="tracedSVG"
+                  width={150}
+                  style={{ fill: "#fff" }}
+                />
+                {/* {title}
+                <span>.</span> */}
               </Link>
             </LogoStyles>
           )}

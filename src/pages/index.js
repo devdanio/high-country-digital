@@ -7,6 +7,7 @@ import PerksModule from "../components/PerksModule/PerksModule"
 import Perk from "../components/PerksModule/Perk"
 import Features from "../components/Features/Features"
 import LatestPosts from "../components/Post/LatestPosts"
+import ClientLogos from "../components/ClientLogos/ClientLogos"
 
 const Index = () => {
   return (
@@ -14,17 +15,15 @@ const Index = () => {
       <Seo title="Home" />
       <Layout>
         <BannerModule
-          title="Welcome to Barcadia"
-          subTitle="Using a combination of Gatsby and Contentful, Barcadia is ready to deploy and simple to use."
+          title="Performance based conversion rate optimiztion"
+          subTitle="You only pay when we deliver results"
         />
+        <ClientLogos />
         <BasicTextModule
-          title="A super-fast theme that is easy to get started, using the power of
-            GatsbyJS"
-          content="Using modern CSS properties such as grid, this theme is optmised for
-            speed and mobile devices. Giving users an excellent experience on
-            any device. Future-proofing your product."
+          title="Business minded developers that leave their tech jargon at home."
+          content="High Country Digital is proud to have a team of expert engineers who not only possess decades of technical experience, but also have the people and business skills to match. We believe in delivering exceptional service, and our team's diverse skill set enables us to do just that."
           link="/products"
-          linkText="View Products"
+          linkText="Learn More"
         />
         <PerksModule>
           <Perk title="The Title" content="The content" />

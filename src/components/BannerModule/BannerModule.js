@@ -11,6 +11,7 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
 
   return (
     <>
+      {``}
       <BannerModuleStyles>
         {children ? (
           children
@@ -18,7 +19,7 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
           <StaticImage
             className="banner__image"
             imgClassName="banner__image--content"
-            src="../../../static/macbook-color.jpg"
+            src="../../../static/telluride.jpg"
             alt="Banner Image"
             layout="fullWidth"
             placeholder="blurred"
