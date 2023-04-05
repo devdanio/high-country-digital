@@ -4,21 +4,22 @@ export const ClientLogosStyles = styled.section`
   margin: 0;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  // background-color: black;
-  > div {
+
+  .logo-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     column-gap: 2rem;
+    row-gap: 2rem;
+    > div {
+      display: flex;
+      flex-direction: row;
+      column-gap: 2rem;
+    }
   }
 
-  // @media (hover: hover) {
-  //   &:hover {
-  //     cursor: pointer;
-  //     color: var(--primary);
-
-  //     &::after {
-  //       left: 100%;
-  //     }
-  //   }
-  // }
+  @media (min-width: 900px) {
+    .logo-wrapper {
+      flex-direction: row;
+    }
+  }
 `

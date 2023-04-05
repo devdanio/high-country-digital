@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa"
 
 const Footer = () => {
-  const allProduct = useAllProduct()
+  const allProduct = [] // useAllProduct()
   const siteMeta = UseSiteMetadata()
   return (
     <FooterStyles style={{ marginBottom: 0 }} className="section">
