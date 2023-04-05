@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const PerksModuleStyles = styled.section`
   background-color: #000;
   position: relative;
+  margin: 0;
 
   .perks__image--bg,
   .perks__image--overlay {

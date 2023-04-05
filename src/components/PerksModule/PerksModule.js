@@ -18,12 +18,12 @@ const PerksModule = () => {
       <div className="container container__tight">
         <Perk
           title="Built For Speed"
-          content="By using GatsbyJS, the Barcadia site is super-fast out of the box"
+          content="Your customers have options, don't let your slow site be the reason they buy from someone else."
         >
           <StaticImage
-            src="../../../static/logos/gatsby-logo.svg"
+            src="../../../static/images/speedometer.png"
             alt="Perk Image"
-            layout="constrained"
+            layout="fixed"
             placeholder="tracedSVG"
           />
         </Perk>
@@ -31,13 +31,13 @@ const PerksModule = () => {
           <Cross />
         </span>
         <Perk
-          title="Built For Content"
-          content="Contentful helps you edit your application with ease as your business expands"
+          title="Built For Results"
+          content="Boost your conversion rates, increase your SEO and get the results you deserve."
         >
           <StaticImage
-            src="../../../static/logos/contentful-logo.svg"
+            src="../../../static/images/sales-results.png"
             alt="Perk Image"
-            layout="constrained"
+            layout="fixed"
             placeholder="tracedSVG"
           />
         </Perk>
