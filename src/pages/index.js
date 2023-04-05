@@ -54,16 +54,18 @@ const Index = () => {
           linkText="Learn More"
         /> */}
         {/* Website performance optimization is our specialty but we don't stop there.  Our talented team has decades of experience, and the people skills to match.  We know when to check our technical jargon at the door and put on our business hats, because at the end of the day all that matters is sales.  */}
-        <Features
+        {/* <Features
           title="Not your typical agency."
           // introduction="High Country Digital is proud to have a team of expert engineers who not only possess decades of technical experience, but also have the people and business skills to match. We believe in delivering exceptional service, and our team's diverse skill set enables us to do just that."
           introduction={
             "Website performance optimization is our specialty but we don't stop there.  Our talented team has decades of experience and the people skills to match.  We know when to check our technical jargon at the door and put on our business hats, because at the end of the day all that matters is boosting your sales."
           }
-        />
+        /> */}
         <LatestPosts
-          title="The Latest from Barcadia"
-          introduction="Cras scelerisque, tellus sed gravida tincidunt, velit tellus blandit justo, nec viverra augue erat in erat. Maecenas iaculis sed purus non fringilla."
+          title="Not your typical agency"
+          introduction={
+            "Website performance optimization is our specialty but we don't stop there.  Our talented team has decades of experience and the people skills to match.  We know when to check our technical jargon at the door and put on our business hats, because at the end of the day all that matters is boosting your KPIs."
+          }
         />
       </Layout>
     </>
