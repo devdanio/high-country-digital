@@ -6,6 +6,10 @@ export const BasicTextModuleStyles = styled.section`
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
+
+  .max-width{
+    500px;
+  }
   div {
     width: 100%;
     margin: 0 auto;

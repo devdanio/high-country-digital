@@ -90,7 +90,7 @@ const NavModule = () => {
         className="menu"
       >
         <NavTopLevel>
-          {menuItems.map((item, index) => (
+          {/* {menuItems.map((item, index) => (
             <li key={index}>
               <Link
                 onClick={toggleNav}
@@ -102,7 +102,30 @@ const NavModule = () => {
                 <span>.</span>
               </Link>
             </li>
-          ))}
+          ))} */}
+
+          <li>
+            <Link
+              onClick={toggleNav}
+              onKeyDown={toggleNav}
+              to={"/"}
+              activeClassName="menu__item--active"
+            >
+              Home
+              <span>.</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={toggleNav}
+              onKeyDown={toggleNav}
+              to={"/about"}
+              activeClassName="menu__item--active"
+            >
+              About
+              <span>.</span>
+            </Link>
+          </li>
           {featuredProduct && (
             <li className={subNavIsOpen ? "open" : "closed"}>
               <button
@@ -110,7 +133,7 @@ const NavModule = () => {
                 onClick={toggleSubNav}
                 onKeyDown={toggleSubNav}
               >
-                Products<span>.</span>
+                Services<span>.</span>
                 <Chevron />
               </button>
 
@@ -119,16 +142,6 @@ const NavModule = () => {
                 animate={subNavIsOpen ? "open" : "closed"}
                 variants={subMenuNavVariants}
               >
-                <li>
-                  <Link
-                    onClick={toggleNav}
-                    onKeyDown={toggleNav}
-                    to="/products"
-                  >
-                    All Products<span>.</span>
-                  </Link>
-                </li>
-                <hr />
                 {featuredProduct.map((item, index) => {
                   const { gatsbyPath, title } = item
                   return (
@@ -147,6 +160,30 @@ const NavModule = () => {
               </SubNavStyles>
             </li>
           )}
+
+          <li>
+            <Link
+              onClick={toggleNav}
+              onKeyDown={toggleNav}
+              to={"/blog"}
+              activeClassName="menu__item--active"
+            >
+              Blog
+              <span>.</span>
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              onClick={toggleNav}
+              onKeyDown={toggleNav}
+              to={"/contact"}
+              activeClassName="menu__item--active"
+            >
+              Contact
+              <span>.</span>
+            </Link>
+          </li>
         </NavTopLevel>
       </motion.div>
     </NavModuleStyles>

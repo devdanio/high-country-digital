@@ -115,7 +115,7 @@ const Producttemplate = (contentfulProduct) => {
           )}
         </div>
       </ProductTemplateStyles>
-      {gallery && (
+      {/* {gallery && (
         <ProductGallery className="section">
           <div className="container container__tight">
             {gallery.map((item, index) => {
@@ -128,7 +128,7 @@ const Producttemplate = (contentfulProduct) => {
       <Features
         title="Featured Products from Barcadia."
         introduction="Vivamus quam mauris, pulvinar vel mauris id, interdum semper neque. Proin malesuada libero eget tellus scelerisque, id egestas tortor egestas."
-      />
+      /> */}
     </>
   )
 }

@@ -17,7 +17,8 @@ const latestBlogPost = [
       "We focus on results, not effort.  By charging based upon performance you can ensure High Country Digital is a partner rather than an expense in your journey for improved conversion rates.",
   },
   {
-    title: "✅ Selective ",
+    // title: "✅ Selective ",
+    title: "✅ Exclusive",
     introduction:
       "Performance based pricing only works if there is opportunity for both parties involved. As much as we would love to accept all business, we only work with ones that we can genuinely help.  To find out if you're one of those companies, sign up for a free consultation here.",
   },
@@ -44,9 +45,9 @@ const LatestPosts = ({ title, introduction }) => {
             return <PostItem key={index} node={node} />
           })}
         </PostItems>
-        <div className="learn__more">
+        {/* <div className="learn__more">
           <Button text="All News Items" as={Link} to="/news" />
-        </div>
+        </div> */}
       </div>
     </div>
   )

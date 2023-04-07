@@ -22,9 +22,9 @@ const Index = () => {
         <BasicTextModule
           title="Speed matters."
           content={
-            <div>
+            <div className="max-width">
               A site that loads in 1 second has an e-commerce conversion rate
-              <br />
+              {` `}
               <strong>250% higher</strong> than a site that loads in 5 seconds.
               <a
                 href="https://www.portent.com/blog/analytics/research-site-speed-hurting-everyones-revenue.htm"
