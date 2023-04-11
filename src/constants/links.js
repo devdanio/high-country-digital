@@ -4,13 +4,17 @@ export const menuItems = [
     text: "home",
   },
   {
-    path: "/products",
-    text: "products",
+    path: "/products/website-performance-optimization/",
+    text: "Website Performance Optimization",
   },
   {
-    path: "/blogs",
-    text: "blog",
+    path: "/products/custom-web-app-development/",
+    text: "Custom Web App Development",
   },
+  // {
+  //   path: "/blogs",
+  //   text: "blog",
+  // },
   {
     path: "/contact",
     text: "contact",

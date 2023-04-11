@@ -35,8 +35,7 @@ export const SimpleBannerStyles = styled.section`
     z-index: 2;
     height: 20vh;
     width: 100%;
-
-    @media (min-width: 768px) {
+    max-width: 570px @media (min-width: 768px) {
       width: 66vw;
     }
 

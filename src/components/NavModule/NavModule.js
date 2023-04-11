@@ -161,7 +161,7 @@ const NavModule = () => {
             </li>
           )}
 
-          <li>
+          {/* <li>
             <Link
               onClick={toggleNav}
               onKeyDown={toggleNav}
@@ -171,7 +171,7 @@ const NavModule = () => {
               Blog
               <span>.</span>
             </Link>
-          </li>
+          </li> */}
 
           <li>
             <Link

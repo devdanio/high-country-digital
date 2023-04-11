@@ -15,8 +15,9 @@ const Index = () => {
       <Seo title="Home" />
       <Layout>
         <BannerModule
-          title="Performance based conversion rate optimiztion"
-          subTitle="You only pay when we deliver results"
+          title="Increase your website speed, boost your conversions"
+          subTitle="Reduce your load time by 50% guaranteed"
+          learnMoreLink="/contact"
         />
         <ClientLogos />
         <BasicTextModule
@@ -36,7 +37,7 @@ const Index = () => {
               </a>
             </div>
           }
-          link="/what-is-my-website-load-speed"
+          link="/contact"
           linkText="How fast is your site?"
         />
         <div>

@@ -20,7 +20,7 @@ const latestBlogPost = [
     // title: "✅ Selective ",
     title: "✅ Exclusive",
     introduction:
-      "Performance based pricing only works if there is opportunity for both parties involved. As much as we would love to accept all business, we only work with ones that we can genuinely help.  To find out if you're one of those companies, sign up for a free consultation here.",
+      "Performance based pricing only works if there is opportunity for both parties involved. As much as we would love to accept all business, we only work with ones that we can genuinely help.  If we aren't a fit, we will gladly connect you with some of our very talented partners agencies or freelancers.",
   },
 ]
 const LatestPosts = ({ title, introduction }) => {

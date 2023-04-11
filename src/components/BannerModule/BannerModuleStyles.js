@@ -35,7 +35,7 @@ export const BannerModuleStyles = styled.section`
     z-index: 2;
     min-height: 33vh;
     width: 100%;
-    max-width: 700px;
+    max-width: 570px;
 
     @media (min-width: 768px) {
       width: 66vw;

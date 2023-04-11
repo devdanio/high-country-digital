@@ -7,8 +7,8 @@ export const BasicTextModuleStyles = styled.section`
   padding-bottom: 3rem;
   text-align: center;
 
-  .max-width{
-    500px;
+  .max-width {
+    max-width: 500px;
   }
   div {
     width: 100%;

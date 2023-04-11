@@ -3,16 +3,20 @@ import styled from "styled-components"
 export const ContactStyles = styled.section`
   max-width: 750px;
   box-sizing: content-box;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
+  // margion-top
+  margin: 0 auto;
 
-  input {
+  input,
+  select {
     height: calc(var(--gap) * 2);
     margin-bottom: var(--gap);
   }
 
   input,
-  textarea {
+  textarea,
+  select {
     background-color: #000;
     color: #fff;
     border: none;

@@ -2,9 +2,17 @@ import * as React from "react"
 import { Link, navigate } from "gatsby"
 import { BannerModuleStyles } from "./BannerModuleStyles"
 import { StaticImage } from "gatsby-plugin-image"
+// import { navigate } from "gatsby"
 import Button from "../Button/Button"
 
-const BannerModule = ({ children, title, subTitle, price, enquire }) => {
+const BannerModule = ({
+  children,
+  title,
+  subTitle,
+  price,
+  learnMoreLink,
+  enquire,
+}) => {
   function scrollToArea() {
     navigate("#topContent")
   }
@@ -50,7 +58,9 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
                   to="/contact"
                 />
               )}
-              <Button onClick={scrollToArea} text="Learn More" />
+              {learnMoreLink && (
+                <Button to={learnMoreLink} text="Learn More" as={Link} />
+              )}
             </div>
           </div>
         </div>
