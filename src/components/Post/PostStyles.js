@@ -16,7 +16,7 @@ export const PostItemsStyles = styled.section`
   }
 `
 
-export const PostItemStyles = styled(Link)`
+export const PostItemStyles = styled.div`
   flex: 0 0 100%;
   border: 2px solid rgba(255, 255, 255, 0.15);
   border-radius: 6px;

@@ -5,7 +5,14 @@ import Footer from "./Footer/Footer"
 import { motion } from "framer-motion"
 import { GlobalStyle } from "../styles/GlobalStyles"
 
+import LogRocket from "logrocket"
+
 const Layout = ({ children }) => {
+  React.useEffect(() => {
+    console.log("Initilizing log rocket")
+
+    LogRocket.init("3xnazz/high-country-digital")
+  }, [])
   return (
     <>
       <GlobalStyle />
