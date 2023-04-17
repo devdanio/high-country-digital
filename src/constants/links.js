@@ -9,7 +9,7 @@ export const menuItems = [
   },
   {
     path: "/products/custom-web-app-development/",
-    text: "Custom Web App Development",
+    text: "Custom Web Development",
   },
   // {
   //   path: "/blogs",

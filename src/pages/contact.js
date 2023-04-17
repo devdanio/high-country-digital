@@ -15,11 +15,11 @@ export const ContactPageStyles = styled.section`
 
 const contact = () => {
   return (
-    <ContactPageStyles>
+    // <ContactPageStyles>
+    <>
       <Seo title="Contact" />
       <Layout>
-        <SimpleBanner title="Lets get started">
-          <h2>Receive a human response in less than 24 hours.</h2>
+        <SimpleBanner title="Boost your conversions now">
           <StaticImage
             className="banner__image"
             src="../../static/images/ai-contact-high-country-digital.png"
@@ -28,7 +28,8 @@ const contact = () => {
         </SimpleBanner>
         <Contact />
       </Layout>
-    </ContactPageStyles>
+    </>
+    // </ContactPageStyles>
   )
 }
 
