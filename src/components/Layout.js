@@ -9,9 +9,7 @@ import LogRocket from "logrocket"
 
 const Layout = ({ children }) => {
   React.useEffect(() => {
-    console.log("Initilizing log rocket")
-
-    LogRocket.init("3xnazz/high-country-digital")
+    LogRocket.init("high-country-digital/high-country-digital")
   }, [])
   return (
     <>
