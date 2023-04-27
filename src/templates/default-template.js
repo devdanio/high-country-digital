@@ -5,7 +5,7 @@ import Seo from "../components/SEO"
 import SimpleBanner from "../components/SimpleBanner/SimpleBanner"
 import RichText from "../components/RichText"
 
-const DefaultTemplate = contentfulPage => {
+const DefaultTemplate = (contentfulPage) => {
   const headerImage = getImage(contentfulPage.headerImage)
   return (
     <>

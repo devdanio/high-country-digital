@@ -89,7 +89,7 @@ body {
 
 h1,
 h2 {
-    margin-top: 0.5rem;
+    margin-top: 4.5rem;
     margin-bottom: 1rem;
     line-height: 1.25em;
     font-weight: 700;
@@ -158,8 +158,8 @@ hr,
 ol,
 ul,
 blockquote {
-  margin-top: calc(var(--sectionMargin) / 2);
-  margin-bottom: calc(var(--sectionMargin) / 2);
+  margin-top: calc(var(--sectionMargin) / 4);
+  margin-bottom: calc(var(--sectionMargin) / 4);
 }
 
 hr {

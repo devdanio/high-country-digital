@@ -47,6 +47,9 @@ export const NavTopLevel = styled.ul`
   padding: 0;
   margin: 0;
 
+  > li {
+    overflow: hidden;
+  }
   > li,
   > li > button {
     text-transform: capitalize;
@@ -108,13 +111,20 @@ export const NavTopLevel = styled.ul`
 
 export const SubNavStyles = styled(motion.ul)`
   padding-left: calc(var(--gap) / 2);
-  list-style: none;
+  list-style-type: none;
   margin: 0;
 
   > li {
     font-size: var(--h4);
     font-weight: 700;
+    margin-bottom: 1rem;
 
+    &:before {
+      content: "➤";
+      font-size: 0.8rem;
+      vertical-align: middle;
+      margin-right: 0.8rem;
+    }
     &:hover {
       > a {
         color: var(--primary);

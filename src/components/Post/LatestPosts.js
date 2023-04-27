@@ -18,13 +18,12 @@ const latestBlogPost = [
   },
   {
     // title: "✅ Selective ",
-    title: "✅ Exclusive",
+    title: "✅ Selective",
     introduction:
       "Performance based pricing only works if there is opportunity for both parties involved. As much as we would love to accept all business, we only work with ones that we can genuinely help.  If we aren't a fit, we will gladly connect you with some of our very talented partners agencies or freelancers.",
   },
 ]
 const LatestPosts = ({ title, introduction }) => {
-  // const latestBlogPost = useLatestBlogPost()
   return (
     <div className="section">
       <div className="container container__tight">
@@ -42,12 +41,9 @@ const LatestPosts = ({ title, introduction }) => {
 
         <PostItems>
           {latestBlogPost.map((node, index) => {
-            return <PostItem key={index} node={node} />
+            return <PostItem key={index} node={node} isLink={false} />
           })}
         </PostItems>
-        {/* <div className="learn__more">
-          <Button text="All News Items" as={Link} to="/news" />
-        </div> */}
       </div>
     </div>
   )
