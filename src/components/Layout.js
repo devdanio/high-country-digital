@@ -4,7 +4,7 @@ import AnimMain from "./AnimMain/AnimMain"
 import Footer from "./Footer/Footer"
 import { motion } from "framer-motion"
 import { GlobalStyle } from "../styles/GlobalStyles"
-
+import { Script } from "gatsby"
 import LogRocket from "logrocket"
 
 const Layout = ({ children }) => {
@@ -26,6 +26,21 @@ const Layout = ({ children }) => {
           <Footer />
         </AnimMain>
       </motion.div>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-LCM4ZRTXLH"
+      />
+      <script
+        dangerouslySetInnerHTML={{
+          __: `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-LCM4ZRTXLH');
+`,
+        }}
+      ></script>
     </>
   )
 }
