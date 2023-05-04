@@ -11,6 +11,16 @@ const Layout = ({ children }) => {
   React.useEffect(() => {
     LogRocket.init("high-country-digital/high-country-digital")
   }, [])
+
+  const handleScriptOnLoad = () => {
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag("js", new Date())
+
+    gtag("config", "G-LCM4ZRTXLH")
+  }
   return (
     <>
       <GlobalStyle />
@@ -29,18 +39,8 @@ const Layout = ({ children }) => {
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-LCM4ZRTXLH"
+        onLoad={handleScriptOnLoad}
       />
-      <script
-        dangerouslySetInnerHTML={{
-          __: `
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-LCM4ZRTXLH');
-`,
-        }}
-      ></script>
     </>
   )
 }
