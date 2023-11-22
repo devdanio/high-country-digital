@@ -120,7 +120,7 @@ const Footer = () => {
           Our products<span>.</span>
         </h5>
         <ul>
-          <li key={index}>
+          <li>
             <Link
               to={"https://powplanner.com"}
               target="_blank"
