@@ -115,21 +115,23 @@ const Footer = () => {
           ""
         )}
       </div>
-      {/* <CopyrightStyles>
-        <div className="container container__tight">
-          <p>
-            Designed & developed by{" "}
-            <a
-              href={siteMeta.developerUrl}
+      <FooterMenuStyles className="footer__menu products__menu">
+        <h5>
+          Our products<span>.</span>
+        </h5>
+        <ul>
+          <li key={index}>
+            <Link
+              to={"https://powplanner.com"}
               target="_blank"
-              rel="noopener noreferrer"
+              activeClassName="menu__item--active"
             >
-              {siteMeta.developerName}
-            </a>
-            <span>.</span>
-          </p>
-        </div>
-      </CopyrightStyles> */}
+              PowPlanner - Ski Trip Planning
+              <span>.</span>
+            </Link>
+          </li>
+        </ul>
+      </FooterMenuStyles>
     </FooterStyles>
   )
 }
