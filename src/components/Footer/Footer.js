@@ -114,24 +114,24 @@ const Footer = () => {
         ) : (
           ""
         )}
+        <FooterMenuStyles className="footer__menu products__menu">
+          <h5>
+            Our products<span>.</span>
+          </h5>
+          <ul>
+            <li>
+              <Link
+                to={"https://powplanner.com"}
+                target="_blank"
+                activeClassName="menu__item--active"
+              >
+                PowPlanner - Ski Trip Planning
+                <span>.</span>
+              </Link>
+            </li>
+          </ul>
+        </FooterMenuStyles>
       </div>
-      <FooterMenuStyles className="footer__menu products__menu">
-        <h5>
-          Our products<span>.</span>
-        </h5>
-        <ul>
-          <li>
-            <Link
-              to={"https://powplanner.com"}
-              target="_blank"
-              activeClassName="menu__item--active"
-            >
-              PowPlanner - Ski Trip Planning
-              <span>.</span>
-            </Link>
-          </li>
-        </ul>
-      </FooterMenuStyles>
     </FooterStyles>
   )
 }
