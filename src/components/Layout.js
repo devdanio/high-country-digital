@@ -1,3 +1,5 @@
+/*global dataLayer, a*/
+
 import * as React from "react"
 import NavModule from "./NavModule/NavModule"
 import AnimMain from "./AnimMain/AnimMain"
@@ -13,13 +15,17 @@ const Layout = ({ children }) => {
   }, [])
 
   const handleScriptOnLoad = () => {
-    window.dataLayer = window.dataLayer || []
-    function gtag() {
-      dataLayer.push(arguments)
-    }
-    gtag("js", new Date())
+    try {
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
 
-    gtag("config", "G-LCM4ZRTXLH")
+      gtag("config", "G-LCM4ZRTXLH")
+    } catch (e) {
+      console.warn(`Error loading Google Analytics`, e)
+    }
   }
   return (
     <>

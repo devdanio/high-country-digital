@@ -1,0 +1,7 @@
+apollo_3d_cart_verified_by_technology was created by exporting apollo data and then using a node script to search for the existance of 3d cart in the HTML
+
+
+
+apollo_3d_cart_verified_by_technology_validation.txt - list of websites that have actually been validated to have 3d cart by parsing the HTML
+
+final.csv - all apollo contacts, validated to ensure that they actually have 3d carts
